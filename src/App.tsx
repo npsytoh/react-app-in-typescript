@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter from './Counter';
 import CounterWithReducer from './CounterWithReducer';
+import InputForm from './InputForm';
 
 interface AppProps {
 	message?: string;
@@ -9,6 +10,7 @@ interface AppProps {
 const App: React.FunctionComponent<AppProps> = ({ message }) => {
 	return (
 		<div>
+			<InputForm />
 			<CounterWithReducer />
 		</div>
 	);
